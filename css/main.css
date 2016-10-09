@@ -1,9 +1,3 @@
-/*
-  AGENCY - A Treehouse template
-  by: http://teamtreehouse.com
-  v.1.0.1
-  License: MIT http://opensource.org/licenses/MIT
-*/
 
 /*Main*/
 * {
@@ -51,9 +45,7 @@ h1, h2 {
   font-weight: 400;
   width: 100%;
 }
-h1 {
-  ;
-}
+
 h2 {
   font-size: 42px;
   color: #465058;
@@ -241,6 +233,7 @@ footer {
   padding: 12px 0;
   margin: 0;
   opacity: .95;
+  border: red 2px solid;
 }
 
 /*Team*/
@@ -342,6 +335,13 @@ footer {
   }
 }
 
-header {
+.header {
   background-color: #fff;
+  transition: 2s;
 }
+
+/*inspect element is-sticky class will appear class when the element becomes sticky.*/
+.is-sticky .header{
+    background: #000;
+}
+
