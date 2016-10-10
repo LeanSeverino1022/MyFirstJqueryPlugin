@@ -10,4 +10,16 @@
 
   $(".header").sticky();
 
+    //sample use of plugin events
+    $('.header').on('sticky-start', function() {
+      //check work.html h1 element with class 'description'
+       $("h1.description").html("Changed");    
+      });
+
+  $('.header').on('sticky-end', function() {
+      $("h1.description").html("bla bla is what we do");  
+      console.log("abaw");  
+    });
+
+
   });
