@@ -2,6 +2,7 @@
 /*Main*/
 * {
   box-sizing: border-box;
+  /*border: 2px solid green;*/
 }
 
 body{
@@ -34,7 +35,7 @@ ul li {
 .row {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 /*Typography*/
@@ -168,19 +169,35 @@ nav a.active {
 .yellow {
   background: #FFD365;
 }
+
+/*Sticky styles*/
+
 .slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+  color: #fff;
+  content: "♣";
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+
+/*.slick-dots {
   position: absolute;
   width: 100%;
   bottom: 20px;
   left: 0;
 }
-.slick-dots li button:before {
-  font-size: 16px;
-  color: #fff;
-}
+
 .slick-dots li.slick-active button:before {
   color: #fff;
-}
+}*/
+
 
 /*Footer*/
 footer {
@@ -318,9 +335,7 @@ footer {
     width: 80%;
     margin: 100px 10%;
   }
-  .slick-dots {
-    top: 20px;
-  }
+
   .frame {
     margin: 40px 0 0;
   }
@@ -347,8 +362,6 @@ footer {
     
 }
 
-.is-sticky h5{
-    /* border: blue 2px solid; */
-}
+
 
 
